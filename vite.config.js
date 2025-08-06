@@ -1,10 +1,6 @@
-"dependencies": {
-  "react": "...",
-  "react-dom": "...",
-  "react-router-dom": "...",
-  "vite": "^6.0.0",
-  "@vitejs/plugin-react": "^x.x.x"
-},
-"devDependencies": {
-  // diğer araçlar
-}
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+});
